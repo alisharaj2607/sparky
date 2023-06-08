@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +15,238 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.hero-container {
+  margin-top: 124px; /* Adjust this value as needed */
+}
+
+.card{
+  padding: 3em 1.2em 1em;
+  border-radius: .5em;
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  margin-top: 22px;
+}
+
+.card-small{
+  padding: 5em .5em .5em;
+  border-radius: .2em;
+  text-align: left;
+  box-shadow: 0 1px 1px rgba(0,0,0,.2);
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: black;
+  margin-top: 10px;
+}
+
+.card-small2{
+  padding: 5em .5em .5em;
+  border-radius: .2em;
+  text-align: left;
+  outline-width: 0.1em;
+  outline-style: solid;
+  outline-color: black;
+  margin-top: 10px;
+}
+
+.card-title{
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.card-review-title{
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(58, 58, 58);
+}
+
+.card-review-text {
+  font-size: 0.8em;
+  margin-top: 10px;
+  color: rgb(58, 58, 58);
+}
+
+.card-review-user {
+  font-size: 1em;
+  margin-top: 15px;
+  color: rgb(83, 83, 83);
+}
+
+.thumbs {
+  margin-top: 10px;
+  color: rgb(61, 61, 61);
+}
+
+.thumb {
+  margin-top: 4px;
+}
+
+.date {
+  color: rgb(83, 83, 83);
+  text-decoration-line: underline;
+}
+
+.btn{
+  border-radius:2.5em;
+  background-color: #0071dc;
+  color: #ffffff;
+  padding: .5em 1.5em;
+}
+.btn:hover {
+background-color: #02417c;
+color: #ffffff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button{
+  border-radius:2.5em;
+  background-color: #0071dc;
+  color: #ffffff;
+  padding: .5em 1.5em;
+  font-size: medium;
+  width: fit-content;
+}
+
+.button2{
+  border-radius:2.5em;
+  background-color: #0071dc;
+  color: #ffffff;
+  padding: .5em 1.5em;
+  font-size: medium;
+  width: fit-content;
+}
+
+.button1{
+  border-radius:2.5em;
+  background-color: white;
+  color: black;
+  padding: .5em 1.5em;
+  font-size: medium;
+  width: fit-content;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: black;
+}
+
+.button1:hover {
+  color: #0071dc;
+  outline-color: #0071dc;
+  }
+
+.button:hover {
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  /* Add any additional styles as needed */
+}
+
+.star-row {
+  color: black;
+  font-size: .8em;
+  margin-top: 7px;
+}
+
+.bold-price {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
+
+.product-price {
+  color: grey;
+}
+
+.text-below-price {
+  font-size: 0.75em;
+}
+
+.line-in-card {
+  margin-top: 20px;
+}
+
+.line-in-text {
+  margin-top: 3px;
+}
+
+.last-line {
+  margin-bottom: 7px;
+}
+
+.product-details {
+  padding: 1em 41em .01em 14.5em;
+  text-align: left;
+}
+
+.specifications {
+  padding: 1em 41em 1em 14.5em;
+  text-align: left;
+}
+
+.reviews-and-ratings {
+  padding: .5em 41em .01em 16em;
+  text-align: left;
+  font-size: .9em;
+}
+
+.reviews {
+  padding: .5em 37em .01em 14.5em;
+}
+
+.details-text {
+  font-size: 0.9em;
+  color: rgb(44, 44, 44);
+}
+
+.bullets {
+  padding: .5em 1.1em;
+  font-size: 0.9em;
+  color: rgb(44, 44, 44);
+}
+
+.h2 {
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+
+.About-this-item {
+  font-size: 1.4em;
+}
+
+.product-text {
+  font-size: 0.85em;
+}
+
+.small-text {
+  font-size: 0.8em;
+  margin-top: -67px;
+  margin-left: 7px;
+}
+
+.small-text2 {
+  font-size: 0.8em;
+  margin-top: 0px;
+}
+
+.small-text3 {
+  color: rgb(81, 81, 81);
+  font-size: 0.8em;
+}
+
+.hidden {
+  display: none;
+}
+
