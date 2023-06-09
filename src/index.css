@@ -116,11 +116,21 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: fit-content;
 }
 
+.button3{
+  border-radius:2.5em;
+  background-color: #0071dc;
+  color: #ffffff;
+  padding: .4em .8em ;
+  font-size: small;
+  width: fit-content;
+  height: fit-content;
+}
+
 .button2{
   border-radius:2.5em;
   background-color: #0071dc;
   color: #ffffff;
-  padding: .5em 1.5em;
+  padding: .5em 1.7em;
   font-size: medium;
   width: fit-content;
 }
@@ -129,9 +139,10 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius:2.5em;
   background-color: white;
   color: black;
-  padding: .5em 1.5em;
-  font-size: medium;
+  padding: .4em .8em ;
+  font-size: small;
   width: fit-content;
+  height: fit-content;
   outline-width: 1px;
   outline-style: solid;
   outline-color: black;
@@ -246,7 +257,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   font-size: 0.8em;
 }
 
-.hidden {
-  display: none;
+.review-summary {
+  font-size: .9em;
 }
 

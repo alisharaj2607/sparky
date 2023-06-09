@@ -1,5 +1,5 @@
-import React from "react";
-const element = "./Page2/Hidden";
+import React, { useState } from 'react';
+import Hidden from "./Hidden";
 
 // const userAction = () => {
 //     let request = '2746474041';
@@ -10,19 +10,29 @@ const element = "./Page2/Hidden";
 //       //.then(json => showSummary(JSON.stringify(json))); // Displaying the stringified data in an alert popup
 // }
   
+
+
 // const Button = () => {
 //     return(
-//         <div className="button2">
-//             <button onClick={userAction}>Fetch Review Summary</button>
+//         <div className="button2" style={{ marginLeft: '232px' }}>
+//             <button>Fetch Review Summary</button>
 //         </div>
 //     );
 // };
 
-
 const Button = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleButtonClick = () => {
+        setIsVisible(!isVisible);
+    };
+
     return(
+        <div>
         <div className="button2" style={{ marginLeft: '232px' }}>
-            <button>Fetch Review Summary</button>
+            <button onClick={handleButtonClick}>Fetch Review Summary</button>
+        </div>
+        {isVisible && <Hidden text="Hi I'm a good product" />}
         </div>
     );
 };

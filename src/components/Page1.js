@@ -5,6 +5,7 @@ import Ratings from "./Ratings";
 import Reviews from "./Reviews";
 import Button1 from "./Button1";
 import Button from "./Button";
+import Button3 from "./Button3";
 import Hidden from "./Hidden";
 
 const Page1 = () => {
@@ -16,10 +17,10 @@ const Page1 = () => {
       <Details />
       {/* {Ratings} */}
       <Ratings />
-      <div className="flex flex-row gap-2" style={{ marginTop: '17px' }}>
-      <Button1 /><Button /> 
+      <div className="flex flex-row gap-1" style={{ marginTop: '17px', marginBottom: '17px' }}>
+      <Button1 /><Button3 /> 
       </div>
-      <Hidden/>
+      <Button/>
       {/* {Reviews} */}
       <Reviews />
     </div>
