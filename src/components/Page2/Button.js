@@ -1,40 +1,32 @@
 import React, { useState } from 'react';
 import Hidden from "./../Hidden";
 
-// const userAction = () => {
-//     let request = '2746474041';
-//     fetch('http://localhost:8080/data/fetch', {method: 'POST',headers:{'Content-Type': 'text/plain'},body:'2746474041'})
-//     .then(data => data.text()).then(response => alert(response)) // functionCall(response)
-    
-//       // Parsing the data into a JavaScript object
-//       //.then(json => showSummary(JSON.stringify(json))); // Displaying the stringified data in an alert popup
-// }
-  
-
-
-// const Button = () => {
-//     return(
-//         <div className="button2" style={{ marginLeft: '232px' }}>
-//             <button>Fetch Review Summary</button>
-//         </div>
-//     );
-// };
-
-const Button = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    const handleButtonClick = () => {
+const userAction = async () => {
+    let request = 'upc2';
+    let response = await fetch('http://localhost:8080/data/fetch', {method: 'POST',headers:{'Content-Type': 'text/plain'},body:request})
+     .then(data => data.json()).catch(error => console.log(error));
+     return response;
+  }
+ 
+ const Button = () => {
+     const [isVisible, setIsVisible] = useState(false);
+     const [response, setResponse] = useState(null);
+     const handleButtonClick = async () => {
+        if(!isVisible) {
+         const res = await userAction();
+         setResponse(res);
+        }
         setIsVisible(!isVisible);
-    };
-
-    return(
-        <div>
-        <div className="button2" style={{ marginLeft: '232px' }}>
-            <button onClick={handleButtonClick}>Fetch Review Summary</button>
-        </div>
-        {isVisible && <Hidden text="Hi I'm a good product" />}
-        </div>
-    );
-};
-
-export default Button
+     };
+ 
+     return(
+         <div>
+         <div className="button2" style={{ marginLeft: '232px', marginTop: '22px' }}>
+             <button onClick={handleButtonClick}><b>Review Insight!</b></button>
+         </div>
+         {isVisible && <Hidden text1={response.summary} text2={response.sentiment}  />}
+         </div>
+     );
+ };
+ 
+ export default Button

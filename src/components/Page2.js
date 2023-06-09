@@ -15,10 +15,10 @@ const Page2 = () => {
       <Product />
       <Details />
       <Ratings />
+      <Button/>
       <div className="flex flex-row gap-1" style={{ marginTop: '17px', marginBottom: '17px' }}>
       <Button1 /><Button3 /> 
       </div>
-      <Button/>
       {/* {Reviews} */}
       <Reviews/>
     </div>
