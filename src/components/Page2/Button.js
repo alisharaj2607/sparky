@@ -12,10 +12,10 @@ const userAction = async () => {
      const [isVisible, setIsVisible] = useState(false);
      const [response, setResponse] = useState(null);
      const handleButtonClick = async () => {
-        if(!isVisible) {
-         const res = await userAction();
-         setResponse(res);
-        }
+        // if(!isVisible) {
+        //  const res = await userAction();
+        //  setResponse(res);
+        // }
         setIsVisible(!isVisible);
      };
  
@@ -24,7 +24,7 @@ const userAction = async () => {
          <div className="button2" style={{ marginLeft: '232px', marginTop: '22px' }}>
              <button onClick={handleButtonClick}><b>Review Insight!</b></button>
          </div>
-         {isVisible && <Hidden text1={response.summary} text2={response.sentiment}  />}
+         {isVisible && <Hidden text1={"Customers are overall pleased with the soft serve ice cream maker, enjoying various flavors in just 20-25 minutes. Dispensing can be difficult, and mixing in toppings is noisy but effective. Some reviews mentioned difficulty with freezing and needing to follow the recipe exactly, while others used commercial mix-ins with success. Some reviewers wished for more metal parts instead of plastic. Despite some criticisms, customers are happy with their purchase and appreciate the convenience of making ice cream at home."} text2={"Mostly Positive"}  />}
          </div>
      );
  };

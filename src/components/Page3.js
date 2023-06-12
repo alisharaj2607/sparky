@@ -1,13 +1,13 @@
 import React from "react";
-import Product from "./Page2/Product";
+import Product from "./Page3/Product";
 import Details from "./Page2/Details";
-import Ratings from "./Page2/Ratings";
-import Reviews from "./Page2/Reviews";
+import Ratings from "./Page3/Ratings";
+import Reviews from "./Page3/Reviews";
 import Button1 from "./Page2/Button1";
 import Button from "./Page2/Button";
 import Button3 from "./Button3";
 import Hidden from "./Hidden";
-import Sparky from "./Sparky";
+import Sparky from "./Page3/Sparky";
 
 const Page2 = () => {
   return (

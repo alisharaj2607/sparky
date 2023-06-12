@@ -6,6 +6,10 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Page1 from "./components/Page1";
 import Page2 from "./components/Page2";
+import Page3 from "./components/Page3";
+import Page4 from "./components/Page4";
+import Page5 from "./components/Page5";
+import Page6 from "./components/Page6";
 
 
 // function App() {
@@ -41,6 +45,10 @@ function App() {
         <Routes>
           <Route exact path="/upc1" element={<Page1 />} />
           <Route exact path="/upc2" element={<Page2 />} />
+          <Route exact path="/upc3" element={<Page3 />} />
+          <Route exact path="/upc4" element={<Page4 />} />
+          <Route exact path="/upc5" element={<Page5 />} />
+          <Route exact path="/upc6" element={<Page6 />} />
         </Routes>
         {/* Additional components and content */}
       </Router>

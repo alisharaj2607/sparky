@@ -32,7 +32,15 @@ code {
   padding: 3em 1.2em 1em;
   border-radius: .5em;
   text-align: left;
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 22px;
+}
+
+.card-sparky{
+  padding: .5em 1em .5em;
+  border-radius: .5em;
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(38, 93, 232, 0.2);
   margin-top: 22px;
 }
 
@@ -97,6 +105,7 @@ code {
 
 .btn{
   border-radius:2.5em;
+  /* background-color: #dcd500; */
   background-color: #0071dc;
   color: #ffffff;
   padding: .5em 1.5em;

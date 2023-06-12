@@ -1,6 +1,6 @@
 import React from "react";
 import { TbBrandWalmart } from "react-icons/tb";
-import sparky_boy from "../assets/Sparky_glass.png";
+import sparky_boy from "../../assets/Sparky_glass.png";
 
 const Hidden = ({text1, text2}) => {
     return(
@@ -15,7 +15,7 @@ const Hidden = ({text1, text2}) => {
                         <div class="card-body" style={{ marginTop: '-22px', marginBottom: '3px' }}>
                             <div class="flex flex-row gap-1">
                                 <p>Overall: </p>
-                                <p  style={{ marginBottom: '5px', color: "#51a951" }}><b>{text2}</b></p>
+                                <p  style={{ marginBottom: '5px', color: "#dcd500" }}><b>{text2}</b></p>
                             </div>
                             <h5 >{text1}</h5>
                         </div>
